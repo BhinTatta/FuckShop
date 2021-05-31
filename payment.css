@@ -1,0 +1,27 @@
+*{
+	font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;}
+	
+body{
+	background-color: black;
+	color: white;
+	}
+p {
+	font-size: 7vw;
+}
+h1{
+	color: #ff5900;
+	font-size: 11vw;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;}
+#sor {
+	margin-top: 11%;
+	display: flex;
+	justify-content: flex-start;
+	}
+#ab {
+	display: flex;
+	justify-content: flex-end;
+	 }
