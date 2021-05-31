@@ -1,0 +1,226 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+header {
+	font-size: 5vw;
+	font-weight: bold;
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+header,
+header:before {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: url(HERO2.jpeg);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+.container1 {
+	width: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 100vh;
+    background: black;
+    line-height: 30px;
+    font-weight: lighter;
+    padding: 40px;
+    color: black;
+}
+
+nav {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	font: inherit;
+	text-decoration: none;
+	height: 7%;
+	length: 100%;
+	background-color: black;
+	z-index: 10;}
+
+nav a:link, a:visited {
+	text-decoration: none;
+	color: white;
+	font-size: 1.5vw;
+	padding: 9px 12px;
+	font-weight: bold;
+	}
+nav a:hover {
+	text-decoration: none;
+	color: lightgrey;
+	font-size: 1.5vw;
+	padding: 7px 12px;
+	font-weight: bold;
+	}
+
+.mkc {
+	display: flex;
+	justify-content: flex-start;
+	font-family: monospace;
+	font-weight: bold;
+	margin-left: 2vw;
+	margin-top: 0.5vw;
+	font-size: 2vw;
+	position: absolute;
+	color:white;
+	z-index: 200;}
+#ffoto {
+	margin-right: 1vw;
+	width: 1.7vw;
+	height: 5vh;}
+	
+
+/* Here STARTS the price card styling * + I've added text of "suck dick"' becuase i couldn't remove the transparent bug lol  */
+	
+.pricing-table{
+
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  z-index: 11;
+}
+
+.pricing-card{
+
+  z-index: 11;
+  flex: 1;
+  max-width: 25vw;
+  background-color: #231c1f;
+  margin: 20px 10px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  color: #ff5900;
+  transition: .3s linear;
+}
+
+.pricing-card-header{
+  background-color: #ff5900;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 20px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .4s linear;
+}
+
+.pricing-card:hover .pricing-card-header{
+  box-shadow: 0 0 0 26em #ff5900;
+}
+
+.price{
+  font-size: 70px;
+  color: #fff;
+  margin: 40px 0;
+  transition: .2s linear;
+}
+.price sup, .price span{
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.pricing-card:hover ,.pricing-card:hover .price{
+  color: #fff;
+}
+
+.pricing-card li{
+  font-size: 16px;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.order-btn{
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.order-btn:hover{
+  font-weight: bold;
+  background: #231c1f;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+/* Here ends the price card styling */
+
+.gyaan{
+
+	z-index: 15;
+	color: grey;}
+	
+.quote{
+	position: relative;
+	width: 100%;
+	border: 0;
+	padding: 0px;
+	z-index: 150;}
+	
+/* payment css */
+.text-gray-400{
+	color: blue;
+	postion: relative;
+	z-index: 199;}
+	
+.khali{
+	font-size: 5px;
+	background-color: #ff5900 ;
+	color: #ff5900;
+	width: 100%}
+	
+.hb1 {
+	position: absolute;
+	z-index: 199;
+	width: 35px;
+	height: 10px;
+	background -color: #ff5900
+	margin: 6px 0;
+	}
